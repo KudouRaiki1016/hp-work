@@ -1,13 +1,11 @@
 import { Box, SxProps, Theme } from "@mui/material";
+import { Title } from "./parts/Title";
 import about_img from "../../resources/images/about_illustration.png"
 
 export const About = () => {
   return (
     <Box className="About" sx={sx}>
-      <Box className="h2_zone">
-        <h2 className="h2 t-center"><span className="color_22A1B9">A</span>BOUT</h2>
-        <h2 className="sub_h2 t-center">私たちについて</h2>
-      </Box>
+      <Title head="A" title="BOUT" sub_title="私たちについて"></Title>
       <Box className="about_img_zone">
         <img src={about_img} alt="画像" />
       </Box>
